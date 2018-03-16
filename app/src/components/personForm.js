@@ -42,7 +42,7 @@ export default class PersonForm extends Component {
                 <form type="application/json" onSubmit={this.handleSubmit}>
                     <p>Name</p>
                     <input type="text" name="name" onChange={this.handleInput}/>
-                    <p>Attributes <i>*between 0-10*</i></p>
+                    <p>Attributes <i>*proficiency score between 0-10*</i></p>
                     <label>javascript: </label><input type="number" name="javascript" min={0} max={10} onChange={this.handleInput}/><br></br>
                     <label>python: </label><input type="number" name="python" min={0} max={10} onChange={this.handleInput}/><br></br>
                     <label>java: </label><input type="number" name="java" min={0} max={10} onChange={this.handleInput}/><br></br>
