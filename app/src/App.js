@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PersonForm from './components/personForm.js';
-let team = require('./team.json').team;
+import {compatibilityPredictor} from './modules';
 
 class App extends Component {
     constructor(props){
@@ -29,10 +29,15 @@ class App extends Component {
 
     calculateScore(e){
         e.preventDefault();
-        console.log('calculate')
+        let workplace = {
+            team: this.state.team,
+            applicants: this.state.applicants
+        }
+        console.log(compatibilityPredictor(workplace))
     }
 
     render(){
+        console.log('all members', this.state)
         return(
             <div className="app">
                 <header>
