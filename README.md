@@ -25,7 +25,7 @@ npm start
 
 1.  The application takes input from web based, client-side input forms
 
-![Image](/home/aukai/Documents/medley/resources/S10BZoDKf_r1B7w-Ytz.png)
+![Image](/assets/input.png)
 
 2.  The client-side application allows you to built a list of your current team members, as well as a list of new applicants, with attributes scores for proficiency in certain languages
 ```json
@@ -119,4 +119,4 @@ teamAverage = {
 
 5.  Then displays the result to the user in the browser
 
-![Image](/home/aukai/Documents/medley/resources/S10BZoDKf_ByvRiWKtG.png)
+![Image](/assets/score.png)
