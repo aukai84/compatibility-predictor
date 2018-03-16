@@ -9,7 +9,7 @@ class App extends Component {
         this.state = {
             team: [],
             applicants: [],
-            scoredApplicants: null 
+            scoredApplicants: [] 
         }
         this.calculateScore  = this.calculateScore.bind(this);
         this.addTeamMember = this.addTeamMember.bind(this);
@@ -76,12 +76,12 @@ class App extends Component {
                     <div className="score-container">
                         <h3>Click the button below to see if your team is compatible</h3>
                         <button onClick={this.calculateScore}>Calculate Applicants Score</button>
-                        {this.state.scoredApplicants  ? this.state.scoredApplicants.map(applicant => (
+                        {this.state.scoredApplicants.map(applicant => (
                             <div>
                                 <p>Name: {applicant.name}</p>
                                 <p>Score: {applicant.score}</p>
                             </div>
-                        )) : (<div></div>)}
+                        ))}
                     </div>
                 </div>
             </div>
